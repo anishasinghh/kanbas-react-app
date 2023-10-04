@@ -1,0 +1,136 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    /* Adjust the width as needed */
+    padding: 20px 0;
+    background-color: #000;
+}
+
+/* Logo */
+#sidebar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sidebar-logo img {
+    max-width: 50%;
+    /* Ensure the image fits within the container */
+    height: auto;
+    /* Maintain the image's aspect ratio */
+}
+
+/* Sidebar links */
+.list-group-item.sidebar-link {
+    text-align: center;
+    padding: 8px;
+    margin: 1px 0;
+    /* Adjust the margin to decrease spacing */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    /* Adjust the font size as needed */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Change background to white and font color to red when clicked */
+.list-group-item.sidebar-linkactive {
+    background-color: #fff;
+    /* White background */
+    color: #f00;
+    /* Red text for active links */
+}
+
+/* White icon for Account link */
+.list-group-item.sidebar-link.account i {
+    color: #8B0000;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Red icons for other links */
+.list-group-item.sidebar-link:not(.account) i {
+    color: #8B0000;
+}
+
+.course-card .card-body {
+    padding: 15px;
+    background-color: #0074e4;
+    /* Solid blue background color */
+    margin-bottom:35px;
+    flex-basis: 250px; 
+}
+
+.card-link{
+    color: #4895EF;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;         /* Hide overflowing content */
+    text-overflow: ellipsis; 
+    
+}
+
+.card-text {
+    font-size: 14px;
+    color: gray;
+    overflow: hidden;
+}
+
+.card-subtitle {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: grey;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.course-card .top-half {
+    background-color: lightskyblue; /* Solid blue background for the top half */
+    height: 150px; /* Set the height of the top half */
+    padding: 20px; /* Add padding within the top half */
+    color: white; /* Text color for the top half */
+}
+
+.fa-pen-square {
+    font-size: 25px;
+}
+
+.course-card .bottom-half {
+    padding: 10px; /* Add padding within the bottom half */
+    border-bottom: 1px solid #D3D3D3; /* Gray border at the top of the bottom half */
+    border-left: 1px solid #D3D3D3; /* Gray border at the top of the bottom half */
+
+    border-right: 1px solid #D3D3D3; /* Gray border at the top of the bottom half */
+
+}
+
+.row-spacing {
+    margin-bottom: 35px; /* Adjust the margin as needed for the desired spacing */
+}
+
+.course-card {
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+}
+
+.ellipsis-icon-container {
+    position: relative;
+    top: 0px; /* Adjust the top value to position it vertically */
+    right: 0px;
+    left: 320px; /* Adjust the right value to position it horizontally */
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    cursor: pointer; /* Add cursor pointer for interaction */
+}
+

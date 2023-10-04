@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Adjust the width as needed */
+    padding: 20px 0;
+    background-color: #000;
+}
+
+/* Logo */
+#sidebar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sidebar-logo img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Sidebar links */
+.list-group-item {
+    text-align: center;
+    padding: 8px;
+    margin: 4px 0; /* Adjust the margin to decrease spacing */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px; /* Adjust the font size as needed */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the text */
+}
+
+/* Change background to white and font color to red when clicked */
+.list-group-item.active {
+    background-color: #fff; /* White background */
+    color: #f00; /* Red text for active links */
+}
+
+/* White icon for Account link */
+.list-group-item.account i {
+    color: #fff;
+}
+
+/* Red icons for other links */
+.list-group-item:not(.account) i {
+    color: #f00;
+}

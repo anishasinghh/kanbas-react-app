@@ -1,106 +1,172 @@
-<table border="1" width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="../profile/index.html">Account</a>
+<html>
+
+<head>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="profileIndex.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="rowww" class="row">
+        <div class="col-6">
+            <div style="position:fixed;margin-left:6%;margin-top:40px" class="icon-with-heading">
+                <span style="padding-top:50px;margin-right:25px" class="menu-icon"><i
+                        class="fas fa-bars fa-lg"></i></span>
+                <span style="font-size:20px">Jose Annunziato's Profile</span>
+            </div>
+        </div>
+        <hr style="margin-top:5%">
+
+        <nav id="sidebar" class="col-12 col-md-6 col-xl-3 d-md-block sidebar">
+            <div class="list-group">
+                <img src="../nu.png" alt="...">
+                <ul class="list-group">
+                    <li class="list-group-item sidebar-link account sidebar-linkactive">
+                        <a href="index.html">
+                            <i class="fa fa-user"></i>Account
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a class="list-group-item sidebar-link" href="../dashboard.html">
+                            <i class="fas fa-chart-bar"></i>Dashboard
+                        </a>
                     </li>
                     <li>
-                        <a href="../home.html">Courses</a>
+                        <a class="sidebar-link list-group-item
+                        " href="../home.html">
+                            <i class="fas fa-book"></i>Courses
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Calendar</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="far fa-calendar"></i>Calendar
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Inbox</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fas fa-inbox"></i>Inbox
+                        </a>
                     </li>
                     <li>
-                        <a href="#">History</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fas fa-history"></i>History
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Studio</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-tv"></i>Studio
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Commons</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-share-square"></i>Commons
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Notifications</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#">ePortfolios</a>
-                    </li>
-                    <li>
-                        <a href="#">Shared Content</a>
-                    </li>
-                    <li>
-                        <a href="#">The Hub</a>
-                    </li>
-                    <li>
-                        <a href="#">Qwickly Course Tools</a>
-                    </li>
-                    <li>
-                        <a href="#">Global Announcements</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <h2>Jose Annunziato</h2>
-                <label for="select-name">Name</label>
-                <select id="select-name">
-                    <option>Jose Annunziato</option>
-                </select>
-                <label for="select-pronouns">Pronouns</label>
-                <select id="select-name">
-                    <option>None</option>
-                </select>
-                <br />
-                <br />
-                <label for="title">Title</label>
-                <input id="title" type="text">
-                <br />
-                <h3 for="contact-services">Contact</h3>
-                <p id="contact-services">No registered services, you can add some on the <a href="#">settings</a> page.
-                </p>
-                <h3 for="biography">Biography</h3>
-                <textarea id=biography
-                    cols="50">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-                <h3 for="links">Links</h3>
-                <ul id="links">
-                    <li>
-                        <a href="#">Youtube</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-question-circle"></i>Help
+                        </a>
                     </li>
                 </ul>
-                <h3>Title URL</h3>
-                <input id=title type="text" value="Youtube">
-                &rarr;
-                <input id=url type="text" value="www.youtube.com">
-                <br />
-                <button>Add Another Link</button> <br />
-                <button>Cancel</button>
-                <button>Save Profile</button> <br />
-                <button>Edit Profile</button>
-                <button>Cancel Editing</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+            </div>
+        </nav>
+
+    
+        <div style="margin-left:90px" class="list-group col-1">
+            <a href="#" class="list-group-item links-link">Notifications</a>
+            <a href="../profile/index.html" class="list-group-item links-link active">Profile</a>
+            <a href="#" class="list-group-item links-link">Files</a>
+            <a href="#" class="list-group-item links-link">Settings</a>
+            <a href="#" class="list-group-item links-link notactive">ePortfolios</a>
+            <a href="#" class="list-group-item links-link">Shared Content</a>
+            <a href="#" class="list-group-item links-link">The Hub</a>
+            <a href="#" class="list-group-item links-link">Qwickly Course Tools</a>
+            <a href="#" class="list-group-item links-link">Global Announcements</a>
+        </div>
+
+
+        <div class="col-4" style="margin-left:5%">
+            <div class="icon-container" style="margin-left:5%">
+                <i class="fa fa-user-circle fa-10x "></i>
+                <a href="./index.html" class="btn button-grey float-end"> <i class="fas fa-pencil-alt"></i> Cancel
+                    Editing</a>
+            </div>
+            <div class="row mb-1 assignment-details">
+                <label for="name1" class="col-sm-2 col-form-label">
+                    Name:</label>
+                <div class="row mb-1 assignment-details">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name1" value="Jose Annunziato">
+                    </div>
+                </div>
+                <label for="pronouns" class="col-sm-2 col-form-label">
+                    Pronouns</label>
+                <div class="row mb-1 assignment-details">
+                    <div class="col-sm-5">
+                        <select id="pronouns" class="form-select">
+                            <option selected>None</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="title" class="col-sm-2 col-form-label">
+                    Title:</label>
+                <div style="padding-bottom:40px" class="row mb-1 assignment-details">
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Contact</h3>
+                <span style="padding-bottom:40px" id="contact-services">No registered services, you can add some on the
+                    <a href="#">settings</a> page.
+                </span>
+            </div>
+            <label for="bio" class="form-label">
+                <h2>Biography</h2>
+            </label>
+            <div class="row mb-3">
+                <textarea class="form-control" id="bio" rows="3"></textarea>
+            </div>
+            <label for="links" class="form-label">
+                <h2>Links</h2>
+            </label>
+            <div class="row mb-3">
+                <textarea class="form-control" id="links" rows="3"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3 style="text-align: center;">Title</h3>
+                    <input id=title type="text" value="Youtube">
+                </div>
+                <div class="col-12 col-md-6 col-xl-3" style="margin-left:20px">
+                    <br />
+                    <br />
+                    <i class="fa fa-arrow-right" style="margin-left:75px"></i>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h3>URL</h3>
+                    <input id=url type="text" value="www.youtube.com">
+                </div>
+            </div>
+            <br />
+            <button type="button" class="btn button-grey" href="#"> Add Another Link
+            </button>
+            <br />
+            <br />
+            <button type="button" style="color:white" class="btn bg-danger float-end" href="../profile/edit.html">
+                Save
+                Profile</button>
+            <button type="button" class="btn button-grey float-end" href="./edit.html"> Cancel
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

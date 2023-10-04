@@ -1,4 +1,219 @@
-<table border="1" width="100%">
+<html>
+
+<head>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="gradesIndex.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="rowww" class="row">
+        <nav id="sidebar" class="col-12 col-md-6 col-xl-3 d-md-block sidebar">
+            <div class="list-group">
+                <img src="./nu.png" alt="...">
+                <ul class="list-group">
+                    <li class="sidebar-link list-group-item account">
+                        <a href="./profile/index.html">
+                            <i class="fa fa-user"></i>Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-group-item sidebar-link" href="dashboard.html">
+                            <i class="fas fa-chart-bar"></i>Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item sidebar-linkactive
+                        " href="home.html">
+                            <i class="fas fa-book"></i>Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="far fa-calendar"></i>Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fas fa-inbox"></i>Inbox
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fas fa-history"></i>History
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-tv"></i>Studio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-share-square"></i>Commons
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-question-circle"></i>Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav style="margin-left:100px;margin-top: 20px;" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <i class="fas fa-bars fa-lg menu-icon"></i></span>
+                <li class="breadcrumb-item">CS4550.12631.202410 > Grades</li>
+                <button type="button" style="margin-left:950px" class="btn button-grey float-end">Student View</button>
+            </ol>
+            <hr />
+        </nav>
+
+        <div style="margin-left:90px" class="list-group col-1 d-none d-md-block">
+            <a href="home.html" class="list-group-item links-link">Home</a>
+            <a href="" class="list-group-item links-link">Modules</a>
+            <a href="#" class="list-group-item links-link">Piazza</a>
+            <a href="#" class="list-group-item links-link ">Zoom Meetings</a>
+            <a href="./assignments/index.html" class="list-group-item links-link">Assignments</a>
+            <a href="#" class="list-group-item links-link">Quizzes</a>
+            <a href="grades.html" class="list-group-item links-link active">Grades</a>
+            <a href="#" class="list-group-item links-link">People</a>
+            <a href="#" class="list-group-item links-link">Microsoft Team Meetings</a>
+            <a href="#" class="list-group-item links-link">Fact Reporting and Photo Roster</a>
+            <a href="#" class="list-group-item links-link">Discussions</a>
+            <a href="#" class="list-group-item links-link">Announcements</a>
+            <a href="#" class="list-group-item links-link">Pages</a>
+            <a href="#" class="list-group-item links-link">Files</a>
+            <a href="#" class="list-group-item links-link">Rubrics</a>
+            <a href="#" class="list-group-item links-link">Outcomes</a>
+            <a href="#" class="list-group-item links-link">Collaborations</a>
+            <a href="#" class="list-group-item links-link">Syllabus</a>
+            <a href="#" class="list-group-item links-link">Settings</a>
+        </div>
+
+        <div class="col-9 col-md-9 col-xl-9 d-block d-sm-block" style="margin-left:5%">
+            <button style="margin-left:1px;" type="button" class="btn button-grey float-end ">Settings</button>
+            <div class="dropdown">
+                <button class="btn button-grey dropdown-toggle float-end top-buttons" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"><i style="color:gray" class="fa fa-file-export"></i>
+                     Export
+                </button> <button type="button" class="btn button-grey float-end "><i style="color:gray" class="fa fa-file-import"></i> Import </button>
+
+                <div class="row">
+                    <div class="col-6 col-md-6 col-xl-6">
+                        <h6 style="margin-top:40px;">Student Names</h6>
+                        <input style="width:100%" id=student-names type="text" placeholder="Search Students">
+                    </div>
+                    <div class="col-6 col-md-6 col-xl-6">
+                        <h6 style="margin-top:40px;">Assignment Names</h6>
+                        <input style="width:100%" id=assignment-names type="text" placeholder="Search Assignments">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button style="margin-left:10px; margin-top:10px;margin-bottom:10px;" type="button"
+                            class="btn button-grey float-start "><i style="color:gray" class="fa fa-filter"></i>Apply Filters</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="first-col">Student Name</th>
+                                <th class="first-col">A1 SETUP <br><small>Out of 100</small></th>
+                                <th class="first-col">A2 HTML <br><small>Out of 100</small></th>
+                                <th class="first-col">A3 CSS <br><small>Out of 100</small></th>
+                                <th class="first-col">A3 BOOTSTRAP <br><small>Out of 100</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="first-col">Doxa Asibey</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>95%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Yetong Chen</td>
+                                <td>92%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Zhenyu Chen</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>93%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Yung-Shien Chen</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Basil Coughlan</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Rachel Dao</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Lana Do</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Kartikey Dwivedi</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Jiarong Feng</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td class="first-col">Saurabh Sunil Gade</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                                <td>100%</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <!-- <table border="1" width="100%">
     <tbody>
         <tr>
             <td valign="top">
@@ -53,7 +268,7 @@
                         <a href="#">Quizzes</a>
                     </li>
                     <li>
-                        <a href="../kanbas/grades.html">Grades</a>
+                        <a href="/kanbas-react-app/public/kanbas/grades.html">Grades</a>
                     </li>
                     <li>
                         <a href="#">People</a>
@@ -153,4 +368,4 @@
                 </table>
             </td>
         </tr>
-</table>
+</table> -->

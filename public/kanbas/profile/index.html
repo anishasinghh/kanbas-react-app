@@ -1,87 +1,124 @@
-<table border="1" width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="../profile/index.html">Account</a>
+<html>
+
+<head>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="profileIndex.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="rowww" class="row">
+        <div class="col-6">
+            <div style="position:fixed;margin-left:6%;margin-top:40px" class="icon-with-heading">
+                <span style="padding-top:50px;margin-right:25px" class="menu-icon"><i
+                        class="fas fa-bars fa-lg"></i></span>
+                <span style="font-size:20px">Jose Annunziato's Profile</span>
+            </div>
+        </div>
+        <hr style="margin-top:5%">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col-12 col-md-6 col-xl-3 d-md-block sidebar">
+            <div class="list-group">
+                <img src="../nu.png" alt="...">
+                <ul class="list-group">
+                    <li class="list-group-item sidebar-link account sidebar-linkactive">
+                        <a href="index.html">
+                            <i class="fa fa-user"></i>Account
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a class="list-group-item sidebar-link" href="../dashboard.html">
+                            <i class="fas fa-chart-bar"></i>Dashboard
+                        </a>
                     </li>
                     <li>
-                        <a href="../home.html">Courses</a>
+                        <a class="sidebar-link list-group-item
+                        " href="../home.html">
+                            <i class="fas fa-book"></i>Courses
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Calendar</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="far fa-calendar"></i>Calendar
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Inbox</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fas fa-inbox"></i>Inbox
+                        </a>
                     </li>
                     <li>
-                        <a href="#">History</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fas fa-history"></i>History
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Studio</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-tv"></i>Studio
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Commons</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-share-square"></i>Commons
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
+                        <a class="sidebar-link list-group-item
+                        " href="#">
+                            <i class="fa fa-question-circle"></i>Help
+                        </a>
                     </li>
                 </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Notifications</a>
-                    </li>
-                    <li>
-                        <a href="../profile/index.html">Profiles</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#">ePortfolios</a>
-                    </li>
-                    <li>
-                        <a href="#">Shared Content</a>
-                    </li>
-                    <li>
-                        <a href="#">The Hub</a>
-                    </li>
-                    <li>
-                        <a href="#">Qwickly Course Tools</a>
-                    </li>
-                    <li>
-                        <a href="#">Global Announcements</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="">
-                <p>Jose Annunziato</p>
-                <hr>
-                </hr>
-                <br />
-                <h2>Jose Annunziato <button><a href="./edit.html">Edit Profile</a></button>
-                </h2>
+            </div>
+        </nav>
+
+        <div style="margin-left:90px" class="list-group col-1">
+            <a href="#" class="list-group-item links-link">Notifications</a>
+            <a href="../profile/index.html" class="list-group-item links-link active">Profile</a>
+            <a href="#" class="list-group-item links-link">Files</a>
+            <a href="#" class="list-group-item links-link">Settings</a>
+            <a href="#" class="list-group-item links-link notactive">ePortfolios</a>
+            <a href="#" class="list-group-item links-link">Shared Content</a>
+            <a href="#" class="list-group-item links-link">The Hub</a>
+            <a href="#" class="list-group-item links-link">Qwickly Course Tools</a>
+            <a href="#" class="list-group-item links-link">Global Announcements</a>
+        </div>
+
+        <div class="col-6" style="margin-left:5%">
+            <div class="icon-container" style="margin-left:5%">
+                <i class="fa fa-user-circle fa-10x "></i>
+                <a href="./edit.html" class="btn button-grey float-end"> <i class="fas fa-pencil-alt"></i> Edit
+                    Profile</a>
+            </div>
+
+            <div style="padding-top:40px;" class="row">
                 <h3>Contact</h3>
-                <p id="contact-services">No registered services, you can add some on the <a href="#">settings</a> page.
-                </p>
+                <span style="padding-bottom:40px" id="contact-services">No registered services, you can add some on the
+                    <a href="#">settings</a> page.
+                </span>
+            </div>
+            <label for="bio" class="form-label">
                 <h2>Biography</h2>
+            </label>
+            <div class="row mb-3">
                 <form id="textarea">
-                    <label>Biography:</label><br />
-                    <textarea cols="30"
+                    <textarea cols="100"
                         rows="10">Faculty, Software Engineer, AI, Space, and renewables enthusiast</textarea>
                 </form>
-                <h3>Links</h3>
-                <a href="https://youtube.com">Youtube</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+            </div>
+            <label for="links" class="form-label">
+                <h2>Links</h2>
+            </label>
+            <div class="row mb-3">
+                <a href="https://youtube.com"><i class="fa fa-link"></i> Youtube</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
