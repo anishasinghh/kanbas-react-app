@@ -7,8 +7,65 @@
 </head>
 
 <body>
+    <div class="dropdown d-md-none">
+        <button class="btn button-grey dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+            CS4550.12631.202410 > Home
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="./profile/index.html">
+                        <i class="fa fa-user"></i>Account
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="dashboard.html">
+                        <i class="fa fa-user"></i>Dashboard
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="home.html">
+                        <i class="fa fa-user"></i>Courses
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="#">
+                        <i class="fa fa-user"></i>Calendar
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="#">
+                        <i class="fa fa-user"></i>Inbox
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="#">
+                        <i class="fa fa-user"></i>History
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="#">
+                        <i class="fa fa-user"></i>Studio
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="#">
+                        <i class="fa fa-user"></i>Commons
+                    </a>
+                </li>
+                <li class="dropdown-item" aria-labelledby="dropdownMenuButton">
+                    <a href="#">
+                        <i class="fa fa-user"></i>Hel[]
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
     <div id="rowww" class="row">
-        <nav id="sidebar" class="col-12 col-md-6 col-xl-3 d-md-block sidebar">
+        <nav id="sidebar" class="col-12 col-md-6 col-xl-3 d-md-block d-none sidebar">
             <div class="list-group">
                 <img src="./nu.png" alt="...">
                 <ul class="list-group">
@@ -69,15 +126,14 @@
 
 
         <nav style="margin-left:100px;margin-top: 20px;" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <i class="fas fa-bars fa-lg menu-icon"></i></span>
-                <li class="breadcrumb-item">CS4550.12631.202410 > Home</li>
-                <button type="button" style="margin-left:950px;" class="btn button-grey float-end">Student View</button>
+            <ol class="breadcrumb ">
+                <i class="fas fa-bars fa-lg menu-icon d-md-block d-none"></i></span>
+                <li class="breadcrumb-item d-md-block d-none">CS4550.12631.202410 > Home</li>
+                <button type="button" style="margin-left:950px;" class="btn button-grey float-end d-md-block d-none ">Student View</button>
             </ol>
-            <hr />
+            <hr class="d-md-block d-none"/>
         </nav>
-
-        <div style="margin-left:90px" class="list-group col-1 d-none d-md-block">
+        <div style="margin-left:90px" class="list-group col-1 d-md-block d-none">
             <a href="home.html" class="list-group-item links-link active">Home</a>
             <a href="#" class="list-group-item links-link">Modules</a>
             <a href="#" class="list-group-item links-link">Piazza</a>
@@ -98,10 +154,10 @@
             <a href="#" class="list-group-item links-link">Settings</a>
         </div>
         <div class="col-12 col-md-8 col-xl-7 d-block d-sm-block" style="margin-left:5%">
-            <button type="button" class="btn bg-danger float-end top-buttons"> <i class="fas fa-plus"></i>
+            <button type="button" class="btn bg-danger float-end top-buttons d-md-block d-none"> <i class="fas fa-plus"></i>
                 Module</button>
             <div class="dropdown">
-                <button class="btn button-grey dropdown-toggle float-end top-buttons" type="button"
+                <button class="btn button-grey dropdown-toggle float-end top-buttons d-md-block d-none" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Publish All
                 </button>
@@ -109,8 +165,8 @@
 
                 </ul>
             </div>
-            <button type="button" class="btn button-grey float-end top-buttons"></i>View Progress</button>
-            <button type="button" class="btn button-grey float-end top-buttons"></i>Collapse All</button>
+            <button type="button" class="btn button-grey float-end top-buttons d-md-block d-none"></i>View Progress</button>
+            <button type="button" class="btn button-grey float-end top-buttons d-md-block d-none"></i>Collapse All</button>
             <hr style="margin-top:50px" />
 
             <div  class="list-group module-group">
@@ -230,7 +286,7 @@
                 </ul>
             </div>
         </div>
-        <div style="margin-left:20px" class="col-2 d-none d-lg-block">
+        <div style="margin-left:20px" class="col-xl-2 d-xl-block d-none">
             <label for="publish-buttons">Course Status</label>
             <br />
             <button type="button" id="publish-buttons" class="btn button-grey float-right">
@@ -274,243 +330,10 @@
                 <span style="margin-left:20px;color:grey;font-size:12px;">CS4550.12631.202410</span>
                 <span style="margin-left:20px;margin-bottom:20px;color:grey;font-size:12px;">Sep 11 at 7pm</span>
             </div>
-            
-            
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../../public/vendors/bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
-
-
-
-<!-- <table border="1" width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="../kanbas/profile/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="../home.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="./home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="../kanbas/assignments/index.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="../kanbas/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-
-                </ul>
-            </td>
-            <td valign="top">
-                <button>Collapse All</button>
-                <button>View Progress</button>
-
-                <select>
-                    <option>Publish All</option>
-                    <option>Publish All modules and items</option>
-                    <option>Publish modules only</option>
-                    <option>UnPublish All</option>
-                </select>
-
-                <button>+ Module</button>
-
-                <hr />
-
-                <ul>
-                    <li>Week 0 - INTRO
-                        <ul>
-                            <li>LEARNING OBJECTIVES
-                                <ul>
-                                    <li>
-                                        Introduction to the course
-                                    </li>
-                                    <li>
-                                        Learn what is Web Development
-                                    </li>
-                                    <li>
-                                        Creating a development environment
-                                    </li>
-                                    <li>
-                                        Creating a Web Application
-                                    </li>
-                                    <li>
-                                        Getting started with the 1st assignment
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>READING
-                                <ul>
-                                    <li>
-                                        Full Stack Developer - Chapter 1 - Introduction
-                                    </li>
-                                    <li>
-                                        Full Stack Developer - Chapter 2 - Creating User Interaces with HTML
-                                    </li>
-                                </ul>
-                            </li>
-                            <li> SLIDES
-                                <ul>
-                                    <li>
-                                        <a href="#">Introduction to Web Development Links to an external site.</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Creating an HTTP server with Node.js Links to an external site.</a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>Creating an React Application Links to an external site.</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Week 1 - HTML
-                        <ul>
-                            <li>LEARNING OBJECTIVES
-                                <ul>
-                                    <li>
-                                        Learn how to create user interfaces with HTML
-                                    </li>
-                                    <li>
-                                        Keep working on assignment 1
-                                    </li>
-                                    <li>
-                                        Deploy the assignment to Netlify
-                                    </li>
-                                </ul>
-                            </li>
-                            <li> READING
-                                <ul>
-                                    <li>
-                                        Full Stack Developer - Chapter 1 - Introduction
-                                    </li>
-                                    <li>
-                                        Full Stack Developer - Chapter 2 - Creating User Interaces with HTML
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <hr />
-            </td>
-            <td valign="top">
-                <h2>Course Status</h2>
-                <button>Unpublish</button>
-                <button>Published</button>
-                <ul>
-                    <li>
-                        <a href="#">Import Existing Content</a>
-                    </li>
-                    <li>
-                        <a href="#">Import From Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Choose Home Page</a>
-                    </li>
-                    <li>
-                        <a href="#">View Course Stream</a>
-                    </li>
-                    <li>
-                        <a href="#">New Announcement</a>
-                    </li>
-                    <li>
-                        <a href="#">New Analytics</a>
-                    </li>
-                    <li>
-                        <a href="#">View Course Notifications</a>
-                    </li>
-                </ul>
-                <h2>Coming Up</h2>
-                <a href="#">View Calendar</a>
-                <ul>
-                    <li>
-                        <a href="#">Lecture CS4550, 12631, 202410 Sep 7 at 11:45am</a>
-                    </li>
-                    <li>
-                        <a href="#">Lecture CS4550, 12631, 202410 Sep 11 at 11:45am</a>
-                    </li>
-                    <li>
-                        <a href="#">Lecture CS5610 06 SP23 Lecture Sep 11 at 6pm</a>
-                    </li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-</html> -->
