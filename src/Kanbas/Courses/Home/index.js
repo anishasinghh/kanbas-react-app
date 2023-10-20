@@ -1,5 +1,8 @@
 import ModuleList from "../Modules";
 import "./index.css"
+import "../../../vendors/fontawesome/css/all.css"
+import "../../../vendors/bootstrap/css/bootstrap.min.css"
+
 
 function Home() {
     return (

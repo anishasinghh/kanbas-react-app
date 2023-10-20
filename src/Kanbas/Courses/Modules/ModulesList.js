@@ -2,10 +2,15 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database"; // Import your database or data source
 import "./index.css"
+import "../../../vendors/fontawesome/css/all.css"
+import "../../../vendors/bootstrap/css/bootstrap.min.css"
+
 
 function ModuleList() {
   const { courseId } = useParams();
   const modules = db.modules;
+ 
+
 
   return (
     <>

@@ -1,5 +1,7 @@
 import { Link, useParams, useLocation } from "react-router-dom";
 import "./cn.css"
+import "../../../vendors/fontawesome/css/all.css"
+import "../../../vendors/bootstrap/css/bootstrap.min.css"
 
 function CourseNavigation() {
   const links = ["Home", "Modules", "Piazza", "Assignments", "Quizzes", "Grades", "People", "Dicussions", "Announcements", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"];
