@@ -1,0 +1,244 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    /* Adjust the width as needed */
+    padding: 20px 0;
+    background-color: #000;
+}
+
+/* Logo */
+#sidebar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sidebar-logo img {
+    max-width: 50%;
+    /* Ensure the image fits within the container */
+    height: auto;
+    /* Maintain the image's aspect ratio */
+}
+
+/* Sidebar links */
+.list-group-item.sidebar-link {
+    text-align: center;
+    padding: 8px;
+    margin: 1px 0;
+    /* Adjust the margin to decrease spacing */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    /* Adjust the font size as needed */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* Apply Roboto font to the text */
+}
+
+/* Change background to white and font color to red when clicked */
+.list-group-item.sidebar-linkactive {
+    background-color: #fff;
+    /* White background */
+    color: #f00;
+    /* Red text for active links */
+}
+
+/* White icon for Account link */
+.list-group-item.sidebar-link.account i {
+    color: #fff;
+}
+
+.list-group-item.sidebar-link.account {
+    color: #fff;
+}
+
+/* Red icons for other links */
+.list-group-item.sidebar-link:not(.account) i {
+    color: #8B0000;
+}
+
+.menu-icon {
+    padding-top: 10px;
+    color: #8B0000;
+    margin-right: 10px
+}
+
+.breadcrumb-item {
+    padding-top: 5px;
+    color: #8B0000
+}
+
+.list-group-item.links-link {
+    text-align: left;
+    background-color: #fff;
+    /* White background for selected link in the Links Container */
+    color: #8B0000;
+    border-left: 0px solid;
+    /* Black text for selected link in the Links Container */
+    border-left-color: white;
+    /* Black border on the left for selected link in the Links Container */
+    border-right: 0px solid;
+    border-right-color: white;
+    border-top: 0px solid;
+    border-top-color: white;
+    border-bottom: 0px solid;
+    border-bottom-color: white;
+    /* Add a transparent left border */
+    text-decoration: none !important;
+    /* Remove underlines */
+    white-space: normal;
+    /* Prevent link text from wrapping */
+    margin-bottom: 0px
+}
+
+/* Change background to white and font color to black when clicked */
+.list-group-item.links-link.active {
+    background-color: #fff;
+    /* White background for selected link in the Links Container */
+    color: #000;
+    border-left: 2px solid;
+    /* Black text for selected link in the Links Container */
+    border-left-color: black;
+    /* Black border on the left for selected link in the Links Container */
+    border-right: 0px solid;
+    border-top: 0px solid;
+    border-top-color: white;
+    border-bottom: 0px solid;
+}
+
+.a {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-pen-square {
+    color: green;
+}
+
+.button-grey {
+    color: lightgray
+}
+
+.details {
+    color: gray;
+    padding-left: 50px;
+    margin-bottom:0px;
+}
+/* Module container */
+.module {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Module header */
+.module-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.module-header h3 {
+    margin: 0;
+}
+
+/* Module content */
+.module-content {
+    padding: 10px 0;
+}
+
+/* Module links or buttons */
+.module-links {
+    text-align: right;
+}
+
+.module-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+    /* Blue color for links, you can customize this */
+}
+
+.module-links a:hover {
+    text-decoration: underline;
+}
+
+.fa-grip-vertical {
+    font-size: 18px;
+    color: black;
+    padding-right: 10px 
+}
+
+.top-buttons {
+    margin-left:1px;
+    color: black;
+}
+
+
+.various-other-buttons {
+    margin-left:0px;
+    margin-bottom: 3px; 
+    width: 210px;
+}
+
+.fa-ellipsis-v {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.button-grey {
+    background-color: lightgrey
+}
+.h4 {
+    font-size: 50px
+}
+
+.module-heading {
+    background-color: lightgray;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.fa-check-circle {
+    color: green;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.module-concept {
+    padding-left: 45px;
+}
+
+a {
+    color: #8B0000
+}
+
+.fa-pen-to-square {
+    color: green
+}
+
+.assignment-details {
+    padding-top: 20px;
+    margin-left:100px
+}
+
+.col-form-label {
+    float: right;
+    text-align:right;
+    text-wrap: nowrap;
+}
+
+.form-check{
+    padding-bottom: 10px;
+}
