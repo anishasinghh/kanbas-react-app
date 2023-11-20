@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database"; // Import your database or data source
 import "../../../vendors/fontawesome/css/all.css"
@@ -10,13 +10,44 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules
 } from "./modulesReducer";
+import { findModulesForCourse, createModule } from "./client";
+import * as client from "./client";
+
+
 
 function ModuleList() {
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
 
   return (
     <>
@@ -41,16 +72,16 @@ function ModuleList() {
               </div>
             </div>
             <button className="btn btn-success"
-              onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+              onClick={handleAddModule}>
               Add
             </button>
             <button className="btn btn-primary"
-              onClick={() => dispatch(updateModule(module))}>
+              onClick={handleUpdateModule}>
               Update
             </button>
           </li>
         </div>
-        
+
         <hr style={{ color: "gray", borderLeft: 0, marginTop: 10 }} />
         <div style={{ marginTop: 0, marginLeft: 0 }} className="list-group module-group col">
 
@@ -66,7 +97,7 @@ function ModuleList() {
                 </h4>
                 <p>{module.description}</p>
                 <button className="btn btn-danger float-end" style={{ marginLeft: 10 }}
-                  onClick={() => dispatch(deleteModule(module._id))}>
+                  onClick={() => handleDeleteModule(module._id)}>
                   Delete
                 </button>
                 <button className="btn btn-warning float-end"
@@ -77,7 +108,6 @@ function ModuleList() {
             ))}
 
         </div>
-
       </div>
     </>
   );
