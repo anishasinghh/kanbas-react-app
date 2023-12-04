@@ -7,7 +7,10 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
-
+import Signin from "./users/signin";
+import Account from "./users/account";
+import UserTable from "./users/table";
+import Signup from "./users/signup";
 
 
 function Kanbas() {
@@ -21,7 +24,6 @@ function Kanbas() {
   useEffect(() => {
     findAllCourses();
   }, []);
-
 
   const [course, setCourse] = useState({
     name: "New Course", number: "New Number",
@@ -37,12 +39,6 @@ function Kanbas() {
     setCourse({ name: "New Course" });
   };
 
-
-  // const addNewCourse = () => {
-  //   setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
-  // };
-
-
   const deleteCourse = async (course_id) => {
     const response = await axios.delete(
       `${URL}/${course_id}`
@@ -51,25 +47,7 @@ function Kanbas() {
       (c) => c._id !== course_id));
   };
 
-
-  // const deleteCourse = (courseId) => {
-  //   setCourses(courses.filter((course) => course._id !== courseId));
-  // };
-
-  // const updateCourse = () => {
-  //   setCourses(
-  //     courses.map((c) => {
-  //       if (c._id === course._id) {
-  //         return course;
-  //       } else {
-  //         return c;
-  //       }
-  //     })
-  //   );
-  // };
-
   const updateCourse = async () => {
-    //const response = await axios.put(`${URL}/${course._id}`, course);
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
@@ -88,7 +66,7 @@ function Kanbas() {
         <div>
           <Routes>
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h1>Account</h1>} />
+            {/* <Route path="Account" element={<h1>Account</h1>} /> */}
             <Route path="Dashboard" element={
               <Dashboard
                 courses={courses}
@@ -100,6 +78,12 @@ function Kanbas() {
             } />
             <Route path="Courses/:courseId/*" element={
               <Courses courses={courses} />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/admin/users" element={<UserTable />} />
+            <Route path="/signup" element={<Signup />} />
+
+
           </Routes>
         </div>
       </div>
